@@ -1,0 +1,5 @@
+{
+  "login_url": "https://apply.ycombinator.com/ycauth/init",
+  "app_url": "https://apply.ycombinator.com/app/edit",
+  "text_file": "../out/yc_app.txt"
+}
