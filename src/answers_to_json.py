@@ -53,6 +53,12 @@ for question_info in questions_info:
     # store only the answer after removing leading and trailing whitespaces
     question_info['answer'] = app_answer_list[0].replace(
         original_question, ""
+    ).replace(
+        "\n\n", "<actual-line-break>"
+    ).replace(
+        "\n", " "
+    ).replace(
+        "<actual-line-break>", "\n\n"
     ).strip()
 
 # write to local JSON
