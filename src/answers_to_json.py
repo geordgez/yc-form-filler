@@ -30,7 +30,7 @@ answer_list = completed_form.split('###')
 for question_info in questions_info:
 
     # get the original question
-    original_question = question_info['description'].strip()
+    original_question = str(question_info['description'].strip())
 
     # print(original_question)
 
